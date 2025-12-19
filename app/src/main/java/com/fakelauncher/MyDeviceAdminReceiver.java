@@ -15,7 +15,6 @@ public class MyDeviceAdminReceiver extends DeviceAdminReceiver {
 	@Override
 	public void onPasswordFailed(Context context, Intent intent)
 	{
-		super.onPasswordFailed(context, intent);
 		Intent i = new Intent(context, LauncherActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);
